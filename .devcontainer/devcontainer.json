@@ -1,0 +1,15 @@
+{
+  "name": "Debian Slim Dev Container with zsh, radian, and xelatex",
+  "image": "dev_container_R:latest",
+  "settings": {
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+  },
+  "extensions": [
+    "ms-python.python",
+    "yzhang.markdown-all-in-one",
+    "REditorSupport.r",
+    "ms-azuretools.vscode-docker"
+  ],
+  "workspaceFolder": "/home/project",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/project,type=bind"
+}
